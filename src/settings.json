@@ -1,0 +1,8 @@
+{
+    "editor.formatOnSave": false,
+    "[php]": {
+        "editor.formatOnSave": false
+    },
+    "php-cs-fixer.enabled": false
+
+}

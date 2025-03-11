@@ -51,3 +51,43 @@ function howManySeconds(int $horas){
 };
 
 echo howManySeconds(10). "<br/>";
+
+//Crie uma função que receba um número como único argumento e retorne truese ele for menor ou igual a zero, caso contrário retorne false.
+function lessThanOrEqualToZero(int $number){
+  $isNumber = $number <= 0 ? "true" : "false";
+  
+  return $isNumber;
+}
+
+print_r(lessThanOrEqualToZero(3). "<br/>");
+
+// Neste desafio, um fazendeiro pede que você diga quantas pernas podem ser contadas entre todos os seus animais. 
+function animals(int $chickens, int $cows, int $pigs){
+  $chi = $chickens * 2;
+  $co = $cows * 4;
+  $pi = $pigs * 4;
+  
+  return $chi + $co + $pi;
+}
+
+echo animals(1, 2, 3). "<br/>";
+
+// Crie uma função que retorne truese uma string estiver vazia e falsecaso contrário.
+function isEmpty(string $str){
+  $isString = strlen($str) === 0 ? true : false;
+  
+  return $isString;
+  
+}
+
+echo isEmpty("a"). "<br/>";
+
+// Crie uma função que receba a idade em anos e retorne a idade em dias.
+function calcAge(int $idade){
+  $ano = 365;
+
+  return $idade * $ano;
+  
+}
+
+echo calcAge(24). "<br/>";

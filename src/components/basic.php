@@ -91,3 +91,50 @@ function calcAge(int $idade){
 }
 
 echo calcAge(24). "<br/>";
+
+//Crie uma função que retorne truese um inteiro é divisível por 5 e falsecaso contrário.
+function divisibleByFive(int $num){
+  return $num % 5 === 0 ? true : false;
+}
+
+echo divisibleByFive(5). "<br/>";
+
+//Dadas duas strings, firstNamee lastName, retorna uma única string no formato "último, primeiro".
+function concatName(string $first, string $last){
+  return "$first $last";
+  
+}
+
+echo concatName("Dev","web"). "<br/>";
+
+//Crie uma função que receba um inteiro e retorne true se ele for divisível por 100, caso contrário retorne false.
+function divisible(int $number){
+  return $number % 100 === 0 ? true : false;
+}
+
+echo divisible(1). "<br/>";
+
+//Escreva duas funções: 
+// 1 - toInt(): Uma função para converter uma string em um inteiro.
+// 2 - toStr(): Uma função para converter um inteiro em uma string.
+function toInt(string $str){
+  return intval($str);
+  
+}
+
+echo (toInt("20")). "<br/>";
+
+function toStr(int $number){
+  return strval($number);
+
+}
+
+var_dump(toStr(6)). "<br/>";
+
+//Escreva uma função para reverter uma matriz.
+function reverse(array $arr){
+  return array_reverse($arr);
+  
+}
+
+print_r(reverse([1,2,3,4])). "<Br/>";

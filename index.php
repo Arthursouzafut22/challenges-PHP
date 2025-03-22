@@ -10,8 +10,8 @@
 <body>
     <?php 
      include("./src/components/basic.php");
+     include("./src/components/intermediary.php");
     ?>
-
 </body>
 
 </html>
